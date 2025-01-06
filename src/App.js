@@ -11,7 +11,6 @@ function App() {
       <Route path="/" element={<HomeScreen/>}/>
       <Route path="about-us" element={<AboutUs/>}/>
       <Route path="*" element={<NotFound/>}/>
-
     </Routes>
   );
 }
