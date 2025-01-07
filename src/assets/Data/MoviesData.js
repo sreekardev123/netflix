@@ -3,7 +3,11 @@ import card_img2 from '../../assets/Movieimg/card_img2.jpg';
 import card_img3 from '../../assets/Movieimg/card_img3.png';
 import card_img4 from '../../assets/Movieimg/card_img4.jpg';
 import card_img5 from '../../assets/Movieimg/card_img5.jpg';
+import card_img6 from '../../assets/Movieimg/card_img6.jpg';
 import card_img7 from '../../assets/Movieimg/card_img7.jpg';
+import card_img8 from '../../assets/Movieimg/card_img8.jpg';
+import card_img9 from '../../assets/Movieimg/card_img9.webp';
+import card_img10 from '../../assets/Movieimg/card_img10.avif';
 import card_img11 from '../../assets/Movieimg/card_img11.webp';
 import card_img12 from '../../assets/Movieimg/card_img12.avif';
 import tittleimg1 from '../../assets/Movieimg/tittleimg1.jpg';
@@ -14,6 +18,10 @@ import tittleimg5 from '../../assets/Movieimg/tittleimg5.jpg';
 import tittleimg6 from '../../assets/Movieimg/tittleimg6.jpg';
 import tittleimg7 from '../../assets/Movieimg/tittleimg7.webp';
 import tittleimg8 from '../../assets/Movieimg/tittleimg8.jpg';
+import tittleimg9 from '../../assets/Movieimg/tittleimg9.webp';
+import tittleimg10 from '../../assets/Movieimg/tittleimg10.webp';
+import tittleimg11 from '../../assets/Movieimg/tittleimg11.webp';
+import tittleimg12 from '../../assets/Movieimg/tittleimg12.webp';
 
 
 const Movies = [
@@ -82,10 +90,10 @@ const Movies = [
         rate: 4.0,
         reviews: 90,
     }, {
-        name: 'No Escape',
+        name: 'War',
         desc: 'A group of friends uncovers dark secrets while exploring an ancient forest.',
         titleImage: tittleimg6,
-        image: card_img7,
+        image: card_img6,
         category: 'Adventure',
         language: 'Spanish',
         year: '2019',
@@ -95,10 +103,10 @@ const Movies = [
         reviews: 90,
     }, 
     {
-        name: 'Lucky Baskhar',
+        name: 'No Escape',
         desc: 'A group of friends uncovers dark secrets while exploring an ancient forest.',
         titleImage: tittleimg7,
-        image: card_img11,
+        image: card_img7,
         category: 'Adventure',
         language: 'Spanish',
         year: '2019',
@@ -108,9 +116,60 @@ const Movies = [
         reviews: 90,
     },
     {
-        name: 'Munjya',
+        name: 'Avengers EndGame',
         desc: 'A group of friends uncovers dark secrets while exploring an ancient forest.',
         titleImage: tittleimg8,
+        image: card_img8,
+        category: 'Adventure',
+        language: 'Spanish',
+        year: '2019',
+        time: '1hr',
+        video: '',
+        rate: 4.0,
+        reviews: 90,
+    },
+    {
+        name: 'Chicchore',
+        desc: 'A group of friends uncovers dark secrets while exploring an ancient forest.',
+        titleImage: tittleimg9,
+        image: card_img9,
+        category: 'Adventure',
+        language: 'Spanish',
+        year: '2019',
+        time: '1hr',
+        video: '',
+        rate: 4.0,
+        reviews: 90,
+    },
+    {
+        name: 'Game Changer',
+        desc: 'A group of friends uncovers dark secrets while exploring an ancient forest.',
+        titleImage: tittleimg10,
+        image: card_img10,
+        category: 'Adventure',
+        language: 'Spanish',
+        year: '2019',
+        time: '1hr',
+        video: '',
+        rate: 4.0,
+        reviews: 90,
+    },
+    {
+        name: 'Lucky Baskhar',
+        desc: 'A group of friends uncovers dark secrets while exploring an ancient forest.',
+        titleImage: tittleimg11,
+        image: card_img11,
+        category: 'Adventure',
+        language: 'Spanish',
+        year: '2019',
+        time: '1hr',
+        video: '',
+        rate: 4.0,
+        reviews: 90,
+    },{
+        name: 'Munjya',
+        desc: 'A group of friends uncovers dark secrets while exploring an ancient forest.',
+        titleImage: tittleimg12,
         image: card_img12,
         category: 'Adventure',
         language: 'Spanish',
