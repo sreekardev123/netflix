@@ -39,3 +39,26 @@ input:focus, textarea:focus,select:focus{
 .zIndex{
    z-index: 1000;
 }
+.custom-scrollbar::-webkit-scrollbar {
+   width: 8px; /* Adjust the width of the scrollbar */
+   background: transparent; /* Make the scrollbar background transparent */
+ }
+ 
+ .custom-scrollbar::-webkit-scrollbar-thumb {
+   background: linear-gradient(to bottom, #555, #888); /* Gradient for the thumb */
+   border-radius: 4px; /* Round edges of the scrollbar thumb */
+ }
+ 
+ .custom-scrollbar::-webkit-scrollbar-track {
+   background: transparent; /* Transparent track background */
+ }
+ 
+ .custom-scrollbar:hover::-webkit-scrollbar-thumb {
+   background: linear-gradient(to bottom, #333, #666); /* Darker gradient on hover */
+ }
+ 
+ .custom-scrollbar {
+   scrollbar-width: thin; /* For Firefox - thin scrollbar */
+   scrollbar-color: #555 transparent; /* Thumb and track colors for Firefox */
+ }
+ 

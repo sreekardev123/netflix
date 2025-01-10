@@ -34,7 +34,7 @@ function TopRated() {
                 <div className="p-4 h-rate hovered border border-border bg-dry rounded-lg overflow-hidden">
                   <img
                     src={movie.titleImage}
-                    alt={movie.name}
+                    alt={movie.tittlename}
                     className="w-full h-full object-cover rounded-lg"
                   />
                   <div className="px-4 hoveres  gap-6 text-center absolute bg-black bg-opacity-70 top-0 left-0 right-0 bottom-0">
@@ -43,9 +43,9 @@ function TopRated() {
                     </button>
                     <Link
                       className="font-semibold text-xl trancuted line-clamp-2"
-                      to={`/movies/${movie.name}`}
+                      to={`/movies/${movie.tittlenam}`}
                     >
-                      {movie.name}
+                      {movie.tittlename}
                     </Link>
                     <div className="flex gap-2 text-star">
                       <Rating value={movie.rate}/>
