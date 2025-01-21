@@ -31,7 +31,7 @@ function App() {
  Aos.init();
   return (
     // <DrawerProvider>
-    <ScrollOnTop>
+    // <ScrollOnTop>
     <Routes>
       <Route path="/" element={<HomeScreen/>}/>
       <Route path="about-us" element={<AboutUs/>}/>
@@ -52,7 +52,7 @@ function App() {
        < Route path='/addmovie' element={<AddMovie/>}/>
       <Route path="*" element={<NotFound/>}/>
     </Routes>
-    </ScrollOnTop>
+    // </ScrollOnTop>
     // </DrawerProvider>
   );
 }
