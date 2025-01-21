@@ -70,5 +70,58 @@ input:focus, textarea:focus,select:focus{
    -ms-overflow-style: none; /* IE and Edge */
    scrollbar-width: none; /* Firefox */
  }
+
  
+ /* Drawer CSS */
+.drawer {
+   overflow: visible;
+ }
+ 
+ .drawer .drawer-content-wrapper {
+   width: 100%;
+ }
+ 
+ .drawer {
+   position: fixed;
+   z-index: 9999;
+   transition: width 0.3s ease, height 0.3s ease,
+               transform 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86);
+ }
+ 
+ .drawer * {
+   transition: transform 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86),
+               opacity 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86),
+               box-shadow 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86);
+ }
+ 
+ /* Drawer Open States */
+ .drawer-bottom.drawer-open.no-mask {
+   bottom: 1px;
+   transform: translateY(1px);
+ }
+ 
+ .drawer.drawer-open .drawer-mask {
+   opacity: 0.3;
+   width: 100%;
+   transition: opacity 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86);
+ }
+ 
+ .drawer.drawer-open .drawer-handle-icon {
+   background: transparent;
+ }
+ 
+ .drawer.drawer-open .drawer-handle-icon:before {
+   transform: translateY(5px) rotate(45deg);
+ }
+ 
+ .drawer.drawer-open .drawer-handle-icon:after {
+   transform: translateY(-5px) rotate(-45deg);
+ }
+ 
+ /* Media Queries for Responsive Design */
+ @media (min-width: 480px) {
+   .drawer .drawer-content-wrapper {
+     width: 480px;
+   }
+ }
  
