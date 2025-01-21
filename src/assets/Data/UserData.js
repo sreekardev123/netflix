@@ -1,4 +1,4 @@
-import React from "react";
+
 import user_img1 from "../../assets/Movieimg/user_img1.jpg";
 import user_img2 from '../../assets/Movieimg/user_img2.webp';
 import user_img3 from '../../assets/Movieimg/user_img3.jpg';

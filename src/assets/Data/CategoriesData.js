@@ -24,16 +24,16 @@ const Categories = [
      title: "Sports"
 },
 { _id: "7",
-     title: "Title 7"
+     title: "Fantasy"
 },
 { _id: "8",
-     title: "Title 8"
+     title: "Musical"
  },
 { _id: "9",
-     title: "Title 9" 
+     title: "Drama" 
 },
   { _id: "10",
-     title: "Title 10" 
+     title: "Thriller" 
 },
 { _id: "11",
      title: "Western"

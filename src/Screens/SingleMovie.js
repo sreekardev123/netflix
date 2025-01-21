@@ -10,9 +10,9 @@ import Titles from '../Components/Titles';
 import { BsCollectionFill } from 'react-icons/bs';
 
 function SingleMovie({ category}) {
-    const {id} =useParams()
-    const movie = Movies.find((movie) => movie.name === id)
-    const RelatedMovies = Movies.filter((m) =>m.category === movie.category);
+    const {id} =useParams();
+    const movie = Movies.find((movie) => movie?.name === id)
+    const RelatedMovies = Movies.filter((m) =>m.category === movie?.category);
   return (
     <>
     <Layout>
