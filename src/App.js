@@ -7,7 +7,7 @@ import NotFound from './Screens/NotFound';
 import ContactUs from './Screens/ContactUs';
 import MoviesPage from './Screens/Movies';
 import SingleMovie from './Screens/SingleMovie';
-// import WatchPage from './Screens/WatchPage';
+import WatchPage from './Screens/WatchPage';
 import Login from './Screens/Login';
 import Register from './Screens/Register';
 import Profile from './Screens/Dashboard/Profile';
@@ -38,7 +38,7 @@ function App() {
       <Route path="/movies" element={<MoviesPage/>}/>
       <Route path="/movie/:id" element={<SingleMovie />} />
       <Route path="/movies/:tittlename" element={<SingleMovie />} />
-      {/* <Route path="/watch/:id" element={<WatchPage/>}/> */}
+      <Route path="/watch/:id" element={<WatchPage/>}/>
       <Route path="/login" element={<Login/>}/>
       < Route path='/register' element={< Register/>}/>
       < Route path='/profile' element={< Profile/>}/>

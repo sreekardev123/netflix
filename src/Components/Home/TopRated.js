@@ -11,12 +11,13 @@ import { FaHeart } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import Rating from "../stars";
 
+
 function TopRated() {
   const [nextEl, setNextEl] = useState(null);
   const [prevEl, setPrevEl] = useState(null);
   const classNames ="hover:bg-dry transitions text-sm rounded w-8 h-8 flex-colo bg-subMain text-white "
   return (
-    <>
+    
       <div className="my-16">
         <Titles title="Top Rated " Icon={BsBookmarkStarFill} />
         <div className="mt-10">
@@ -64,7 +65,7 @@ function TopRated() {
                     </button>
                     <Link
                       className="font-semibold text-xl trancuted line-clamp-2"
-                      to={`/movies/${movie.tittlenam}`}
+                      to={`/movies/${movie.tittlename}`}
                     >
                       {movie.tittlename}
                     </Link>
@@ -88,7 +89,7 @@ function TopRated() {
           </div>
         </div>
       </div>
-    </>
+    
   );
 }
 

@@ -1,4 +1,4 @@
-import React from "react";
+ import React from "react";
 import Layout from "../Layout/Layout";
 import logoimg from "../assets/logoimg.png";
 import { Input } from "../Components/UsedInputs";
@@ -46,3 +46,4 @@ function Login() {
 }
 
 export default Login;
+
