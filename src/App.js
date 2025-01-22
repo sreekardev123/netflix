@@ -19,8 +19,7 @@ import Categories from  './Screens/Dashboard/Admin/Categories'
 import Users from './Screens/Dashboard/Admin/Users';
 import AddMovie from './Screens/Dashboard/Admin/AddMovie';
 import ScrollOnTop from './ScrollOnTop';
-// import DrawerContext from './context/DrawerContext';
-// import  { SidebarProvider } from './context/DrawerContext';
+import DrawerContext from './context/DrawerContext';
 
 
 
@@ -30,8 +29,8 @@ import ScrollOnTop from './ScrollOnTop';
 function App() {
  Aos.init();
   return (
-    // <DrawerProvider>
-    // <ScrollOnTop>
+    <DrawerContext>
+    <ScrollOnTop>
     <Routes>
       <Route path="/" element={<HomeScreen/>}/>
       <Route path="about-us" element={<AboutUs/>}/>
@@ -52,8 +51,9 @@ function App() {
        < Route path='/addmovie' element={<AddMovie/>}/>
       <Route path="*" element={<NotFound/>}/>
     </Routes>
-    // </ScrollOnTop>
-    // </DrawerProvider>
+   </ScrollOnTop>
+   </DrawerContext>
+    
   );
 }
 
