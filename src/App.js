@@ -32,15 +32,16 @@ function App() {
     // <DrawerContext>
     //* <ScrollOnTop> */
     <Routes>
-      <Route path="/" element={<HomeScreen/>}/>
+       <Route path="/" element={<Login/>}/>
+      <Route path="/login" element={<Login/>}/>
+      <Route path='/register' element={< Register/>}/>
+      <Route path="/home" element={<HomeScreen/>}/>
       <Route path="about-us" element={<AboutUs/>}/>
       <Route path="contact-us" element={<ContactUs/>}/>
       <Route path="/movies" element={<MoviesPage/>}/>
       <Route path="/movie/:id" element={<SingleMovie />} />
       <Route path="/movies/:tittlename" element={<SingleMovie />} />
       <Route path="/watch/:id" element={<WatchPage/>}/>
-      <Route path="/login" element={<Login/>}/>
-      < Route path='/register' element={< Register/>}/>
       < Route path='/profile' element={< Profile/>}/>
       < Route path='/password' element={< Password/>}/>
       < Route path='/favorites' element={<FavoritesMovies/>}/>
