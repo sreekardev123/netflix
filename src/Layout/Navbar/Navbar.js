@@ -103,7 +103,7 @@ function Navbar() {
         <div className="container mx-auto py-6 px-2 lg:grid gap-10 grid-cols-7 justify-between items-center">
           {/* Logo */}
           <div className="col-span-1 lg:block hidden">
-            <Link to="/">
+            <Link to="/home">
               <img
                 src={logoimg}
                 alt="logo"

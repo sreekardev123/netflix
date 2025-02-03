@@ -14,7 +14,7 @@ function SingleMovie({ category }) {
   const [modalOpen, setModalOpen] = useState(false);
   const { id } = useParams();
   const movie = Movies.find((movie) => movie?.name === id);
-  const RelatedMovies = Movies.filter((m) => m.category === movie?.category);
+ const RelatedMovies = Movies.filter((m) => m.category === movie?.category);
   return (
     <>
       <Layout>

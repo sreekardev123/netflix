@@ -40,7 +40,7 @@ function App() {
       <Route path="contact-us" element={<ContactUs/>}/>
       <Route path="/movies" element={<MoviesPage/>}/>
       <Route path="/movie/:id" element={<SingleMovie />} />
-      <Route path="/movies/:tittlename" element={<SingleMovie />} />
+      <Route path="/movies/:tittlename" element={<WatchPage />} />
       <Route path="/watch/:id" element={<WatchPage/>}/>
       < Route path='/profile' element={< Profile/>}/>
       < Route path='/password' element={< Password/>}/>

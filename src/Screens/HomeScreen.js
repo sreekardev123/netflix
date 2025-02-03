@@ -5,6 +5,7 @@ import PopularMovies from '../Components/Home/PopularMovies'
 import Promos from '../Components/Home/Promos'
 import TopRated from '../Components/Home/TopRated'
 
+
 function HomeScreen() {
   return (
     <Layout>
@@ -13,6 +14,7 @@ function HomeScreen() {
           <PopularMovies/>
           <Promos/>
           <TopRated/>
+          
         </div>
     </Layout>
     

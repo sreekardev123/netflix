@@ -2,6 +2,7 @@ import React from "react";
 import SideBar from "../SideBar";
 import Table from "../../../Components/Table";
 import Movies from "../../../assets/Data/MoviesData";
+// import TittleMovies from "../../../assets/Data/TittleMoviesData";
 
 
 function MoviesList() {

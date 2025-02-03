@@ -6,13 +6,15 @@ import { Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/autoplay";
-import Movies from "../../assets/Data/MoviesData";
+import TittleMovies from "../../assets/Data/TittleMoviesData";
 import { FaHeart } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import Rating from "../stars";
 
 
+
 function TopRated() {
+  
   const [nextEl, setNextEl] = useState(null);
   const [prevEl, setPrevEl] = useState(null);
   const classNames ="hover:bg-dry transitions text-sm rounded w-8 h-8 flex-colo bg-subMain text-white "
@@ -51,12 +53,12 @@ function TopRated() {
             }}
 
           >
-            {Movies.map((movie, index) => (
+            {TittleMovies.map((tittlemovie, index) => (
               <SwiperSlide key={index}>
                 <div className="p-4 h-rate hovered border border-border bg-dry rounded-lg overflow-hidden">
                   <img
-                    src={movie.titleImage}
-                    alt={movie.tittlename}
+                    src={tittlemovie?.titleImage}
+                    alt={tittlemovie?.tittlename}
                     className="w-full h-full object-cover rounded-lg"
                   />
                   <div className="px-4 hoveres  gap-6 text-center absolute bg-black bg-opacity-70 top-0 left-0 right-0 bottom-0">
@@ -65,12 +67,13 @@ function TopRated() {
                     </button>
                     <Link
                       className="font-semibold text-xl trancuted line-clamp-2"
-                      to={`/movies/${movie.tittlename}`}
+                      // to={`/movies/${tittlemovie?.tittlename}`}
+                     to= {`/watch/${tittlemovie?.tittlename}`}
                     >
-                      {movie.tittlename}
+                      {tittlemovie.tittlename}
                     </Link>
                     <div className="flex gap-2 text-star">
-                      <Rating value={movie.rate}/>
+                      <Rating value={tittlemovie.rate}/>
 
                     </div>
                   </div>

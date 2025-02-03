@@ -17,8 +17,8 @@ function Movieinfo({ movie, setModalOpen }) {
           <div className="container px-3 mx-auto 2xl:px-32 xl:grid grid-cols-3 flex-colo py-10 lg:py-20 gap-8">
             <div className="xl:col-span-1 w-full xl:order-none order-last h-header bg-dry border border-gray-800 rounded-lg overflow-hidden">
               <img
-                src={movie?.titleImage}
-                alt={movie?.tittlename}
+                src={movie?.image} 
+                alt={movie?.name}
                 className="w-full h-full  object-cover"
               />
             </div>
@@ -26,7 +26,7 @@ function Movieinfo({ movie, setModalOpen }) {
               <div className="col-span-3 flex flex-col gap-10">
                 {/* Title */}
                 <h1 className="xl:text-4xl capitalize font-sans text-2xl font-bold">
-                  {movie?.tittlename}
+                  {movie?.name}
                 </h1>
                 {/* flex items */}
                 <div className="flex items-center gap-4 font-medium text-dryGray">
@@ -56,7 +56,7 @@ function Movieinfo({ movie, setModalOpen }) {
                   {/*watch button  */}
                   <div className="sm:col-span-2 col-span-3 flex justify-end font-medium text-sm">
                     <Link
-                      to={`/watch/${movie?.tittlename}`}
+                      to={`/watch/${movie?.name}`}
                       className="bg-dry py-4 hover:bg-subMain transitions border-2 border-subMain rounded-full flex-rows gap-4 w-full sm:py-3"
                     >
                       <FaPlay className="w-3 h-3" /> watch

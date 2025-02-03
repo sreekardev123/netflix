@@ -39,7 +39,7 @@ function ShareMovieModal({ modalOpen, setModalOpen, movie }) {
       },
     ];
   
-    const url = `${window.location.protocol}//${window.location.host}/movie/${movie.name}`;
+    const url = `${window.location.protocol}//${window.location.host}/movies/${movie?.name}`;
   
     return (
       <MainModal modalOpen={modalOpen} setModalOpen={setModalOpen}>
