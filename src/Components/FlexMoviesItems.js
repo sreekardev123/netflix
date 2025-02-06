@@ -13,7 +13,9 @@ function FlexMoviesItems({movie}) {
         <span className='text-sm font-medium'>{movie?.year}</span>
         </div>
         <div className='flex items-center gap-2'>
+        {/* <BiTime text-sm font-medium /> */}
         <BiTime text-sm font-medium />
+
         <span className='text-sm font-medium'>{movie?.time}</span>
         </div>
     </>

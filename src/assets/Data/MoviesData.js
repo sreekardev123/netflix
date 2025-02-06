@@ -10,19 +10,6 @@ import card_img9 from "../../assets/Movieimg/card_img9.webp";
 import card_img10 from "../../assets/Movieimg/card_img10.avif";
 import card_img11 from "../../assets/Movieimg/card_img11.webp";
 import card_img12 from "../../assets/Movieimg/card_img12.avif";
-// import tittleimg1 from "../../assets/Movieimg/tittleimg1.jpg";
-// import tittleimg2 from "../../assets/Movieimg/tittleimg2.jpg";
-// import tittleimg3 from "../../assets/Movieimg/tittleimg3.avif";
-// import tittleimg4 from "../../assets/Movieimg/tittleimg4.webp";
-// import tittleimg5 from "../../assets/Movieimg/tittleimg5.jpg";
-// import tittleimg6 from "../../assets/Movieimg/tittleimg6.jpg";
-// import tittleimg7 from "../../assets/Movieimg/tittleimg7.webp";
-// import tittleimg8 from "../../assets/Movieimg/tittleimg8.jpg";
-// import tittleimg9 from "../../assets/Movieimg/tittleimg9.webp";
-// import tittleimg10 from "../../assets/Movieimg/tittleimg10.webp";
-// import tittleimg11 from "../../assets/Movieimg/tittleimg11.webp";
-// import tittleimg12 from "../../assets/Movieimg/tittleimg12.webp";
-// import Trailer from "../../assets/Trailer.mp4";
 
 const Movies = [
   {
@@ -76,7 +63,6 @@ const Movies = [
   {
     name: "The Ghost",
     desc: "An ex-Interpol officer wreaks havoc and sends shock waves across the global underworld but goes missing in action, only to remerge years later, for his beloved family.",
-
     image: card_img5,
     category: "Adventure",
     language: "Telugu",
@@ -89,7 +75,6 @@ const Movies = [
   {
     name: "War",
     desc: "A war is a sustained, organized armed conflict between nations or political groups, characterized by widespread violence, destruction, and loss of life, often involving regular military forces and conducted on a large scale, causing significant social and economic disruption across affected regions; it is a form of political violence where the use of force aims to achieve strategic objectives.",
-
     image: card_img6,
     category: "Action",
     language: "Hindi",
@@ -102,7 +87,6 @@ const Movies = [
   {
     name: "No Escape",
     desc: "No Escape is a high-stakes thriller project where the protagonist, usually an ordinary individual thrust into a dangerous situation, must navigate a hostile environment with no clear path to safety, desperately trying to escape imminent threats while facing extreme challenges and moral dilemmas, often with limited resources and time, all while protecting themselves and potentially others around them.",
-
     image: card_img7,
     category: "Thriller",
     language: "English",
@@ -115,7 +99,6 @@ const Movies = [
   {
     name: "Avengers EndGame",
     desc: "Avenger Endgame is a Marvel superhero film where the surviving Avengers, devastated by Thanos' actions in Infinity War which erased half of all life in the universe, must band together to travel through time, retrieve the Infinity Stones from different points in the past, and attempt to reverse the damage, ultimately facing Thanos in a final, epic battle to restore the universe and those they lost.",
-
     image: card_img8,
     category: "Adventure",
     language: "English",
@@ -128,7 +111,6 @@ const Movies = [
   {
     name: "Chicchore",
     desc: "Chhichhore is a Bollywood film that follows a middle-aged man, Anirudh, who recounts his college days to his critically ill son, sharing stories about his group of friends labelled as losers and how they navigated their academic and personal struggles, ultimately conveying the message that winning isn't everything and that one's self-worth isn't defined by failures, but by the journey and the people around them.",
-
     image: card_img9,
     category: "Romantic",
     language: "Hindi",
@@ -141,7 +123,6 @@ const Movies = [
   {
     name: "Game Changer",
     desc: "A game changer description for your project should highlight how it radically alters the current approach or landscape within your field, introducing a significantly improved solution or innovative concept that could potentially disrupt the market or significantly enhance user experience, essentially setting a new standard for others to follow.",
-
     image: card_img10,
     category: "Adventure",
     language: "Telugu",
@@ -154,7 +135,6 @@ const Movies = [
   {
     name: "Lucky Baskhar",
     desc: "Three years earlier, Baskhar is a cashier in Magadha, one of the few remaining private banks in India following nationalisation. On the side, he helps uneducated people write checks and banking forms for a fee. He lives with his wife Sumathi, who left her rich family to be with him and aspires to start a home food business, their young son Karthik, and Prahalad, Baskhar's father, a former chartered accountant who was paralyzed and became voluntarily mute after being scammed into a bad business deal.",
-
     image: card_img11,
     category: "Adventure",
     language: "Telugu",
@@ -167,7 +147,6 @@ const Movies = [
   {
     name: "Munjya",
     desc: "In 1952, in a village in the Konkan, a young boy named Gotya is in love with Munni, a girl seven years older than him. When Munni's marriage is arranged with another man, Gotya unsuccessfully attempts to poison him. After being scolded by his mother and made a priest, Gotya, determined to marry Munni, takes his sister Gita to a dense jungle called Chetukwadi to perform black magic under a peepal tree. In the process, he accidentally kills himself when trying to sacrifice his sister, and becomes a malevolent spirit named Munjya that haunts the tree.",
-
     image: card_img12,
     category: "Horror",
     language: "Hindi",

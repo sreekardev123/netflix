@@ -16,12 +16,12 @@ const Rows = (movie, i, admin) => {
         <div className="w-12 p-1 bg-dry border border-border h-12 rounded overflow-hidden ">
           <img
             className="h-full w-full  object-cover"
-            src={movie.titleImage}
-            alt={`${movie?.tittlename} `}
+            src={movie.image}
+            alt={`${movie?.name} `}
           />
         </div>
       </td>
-      <td className={`${Text} truncate`}>{movie.tittlename}</td>
+      <td className={`${Text} truncate`}>{movie.name}</td>
       <td className={`${Text}`}>{movie.category}</td>
       <td className={`${Text}`}>{movie.language}</td>
       <td className={`${Text}`}>{movie.year}</td>

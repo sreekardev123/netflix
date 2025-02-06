@@ -68,12 +68,15 @@ function TopRated() {
                     <Link
                       className="font-semibold text-xl trancuted line-clamp-2"
                       // to={`/movies/${tittlemovie?.tittlename}`}
-                     to= {`/watch/${tittlemovie?.tittlename}`}
+                      to={`/watch/${tittlemovie?.tittlename}`}
+
                     >
                       {tittlemovie.tittlename}
                     </Link>
                     <div className="flex gap-2 text-star">
-                      <Rating value={tittlemovie.rate}/>
+                      {/* <Rating value={tittlemovie.rate}/> */}
+                      <Rating value={tittlemovie.tittlerate}/>
+
 
                     </div>
                   </div>

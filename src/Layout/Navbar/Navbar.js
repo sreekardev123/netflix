@@ -102,7 +102,7 @@ function Navbar() {
       <div className="bg-main shadow-md sticky top-0 z-20">
         <div className="container mx-auto py-6 px-2 lg:grid gap-10 grid-cols-7 justify-between items-center">
           {/* Logo */}
-          <div className="col-span-1 lg:block hidden">
+          {/* <div className="col-span-1 lg:block hidden">
             <Link to="/home">
               <img
                 src={logoimg}
@@ -110,7 +110,15 @@ function Navbar() {
                 className="w-full h-12 object-contain"
               />
             </Link>
-          </div>
+          </div> */}
+          <div className="flex justify-center items-center ">
+          <Link to="/home">
+          <h1 className="text-4xl font-bold tracking-wide">
+          <span className="text-red-600 italic">NETMi</span>
+          <span className="text-red-500  italic">rror</span>
+      </h1>
+      </Link>
+    </div>
           {/* Search form */}
           <div className="col-span-3">
             <form

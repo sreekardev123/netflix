@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logoimg from "../../assets/logoimg.png"
+import logoimg from "../../assets/logoimg.png";
 
 function Footer() {
   const Links = [
@@ -91,22 +91,27 @@ function Footer() {
                     </Link>
                   </li>
                 ))}
-
               </ul>
             </div>
           ))}
           <div className="pb-3.5 sm:pb-0 col-span-1 md:col-span-2 lg:col-span-3">
-            <Link to="/">
-            <img src={logoimg} alt="logo" className="w-2/4 object-contain h-12"/>
-            </Link>
+          <div className="">
+              <Link to="/home">
+                <h1 className="text-4xl font-bold tracking-wide">
+                  <span className="text-red-600 italic">NETMi</span>
+                  <span className="text-red-500  italic">rror</span>
+                </h1>
+              </Link>
+            </div>
             <p className="leading-7 text-sm text-border mt-3">
-                <span>
-                Lorem 168 Andrew Road, suite 400,<br/> New York,NY 100089
-                </span>
-                <br/>
-                <span>Moblile : +91 456 789 452</span>
-                <br/>
-                <span>Email : netmirror123@gmail.com</span>
+              <span>
+                India Hitech City,Hyd
+                <br /> India,Hyd 100089
+              </span>
+              <br />
+              <span>Moblile : +91 939 251 1963</span>
+              <br />
+              <span>Email : netmirror123@gmail.com</span>
             </p>
           </div>
         </div>

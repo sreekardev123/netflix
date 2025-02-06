@@ -1,5 +1,5 @@
-import React from "react";
-import { Link, useLocation } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { Link, useLocation, useParams } from "react-router-dom";
 import Layout from "../Layout/Layout";
 import { BiArrowBack } from "react-icons/bi";
 import { FaCloudDownloadAlt, FaHeart } from "react-icons/fa";
@@ -7,14 +7,16 @@ import Movies from "../assets/Data/MoviesData";
 
 function WatchPage() {
   const location = useLocation();
-  const { movieId } = location.state || {}; // Get movieId from passed state
-  const movie = Movies.find((movie) => movie.id === movieId);
+  const movieName= useParams()
+  const [moviesData,setmoviesData] = useState([])
+  
+ useEffect(()=>{
+  const movie = Movies.filter((movie) => movie.name=== movieName.id);
+  console.log(movie[0].trailerurl,"traile url")
+  setmoviesData(movie)
 
-  // Function to convert a normal YouTube URL into an embeddable format
-  const getEmbedUrl = (url) => {
-    const videoId = url.split("v=")[1]?.split("&")[0]; // Extracts the video ID
-    return `https://www.youtube.com/embed/${videoId}?autoplay=1&controls=1`;
-  };
+ },[])
+
 
   return (
     <Layout>
@@ -29,7 +31,7 @@ function WatchPage() {
             Back
           </Link>
           <h2 className="text-lg font-bold border-b-2 border-gray-700">
-            {movie?.name || "Unknown Movie"}
+            {moviesData[0]  ?.name || "Unknown Movie"}
           </h2>
           <div className="flex gap-2">
             <button className="border border-gray-700 bg-subMain text-white px-4 py-2 rounded-md flex items-center gap-2 hover:bg-opacity-80">
@@ -45,11 +47,11 @@ function WatchPage() {
 
         {/* Trailer Section */}
         <div className="w-full h-[500px] bg-dry rounded-md border border-gray-700 relative">
-          {movie.trailerurl ? (
+          {moviesData[0]?.trailerurl ? (
             <iframe
               className="w-full h-full rounded-md"
-              src={getEmbedUrl(movie.trailerurl)} // Convert URL to embeddable format
-              title={movie.name}
+              src={(moviesData[0].trailerurl)} // Convert URL to embeddable format
+              title={moviesData[0]?.name}
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             ></iframe>
@@ -63,3 +65,4 @@ function WatchPage() {
 }
 
 export default WatchPage;
+
