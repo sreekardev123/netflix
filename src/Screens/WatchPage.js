@@ -31,7 +31,7 @@ function WatchPage() {
             Back
           </Link>
           <h2 className="text-lg font-bold border-b-2 border-gray-700">
-            {moviesData[0]  ?.name || "Unknown Movie"}
+            {moviesData[0]?.name || "Unknown Movie"}
           </h2>
           <div className="flex gap-2">
             <button className="border border-gray-700 bg-subMain text-white px-4 py-2 rounded-md flex items-center gap-2 hover:bg-opacity-80">
